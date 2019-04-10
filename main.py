@@ -4,7 +4,6 @@ import subprocess
 import random
 import sys
 import requests
-from google import search
 from random import choice
 import pyttsx3
 engine = pyttsx3.init()
