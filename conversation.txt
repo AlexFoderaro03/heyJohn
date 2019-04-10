@@ -1,1 +1,1 @@
-run Python game
+open Python game
