@@ -3,6 +3,8 @@ import webbrowser
 import subprocess
 import random
 import sys
+import requests
+from google import search
 from random import choice
 import pyttsx3
 engine = pyttsx3.init()
@@ -115,11 +117,18 @@ try:
 		webbrowser.open_new_tab(website)
 		engine.say("Sure")
 		engine.runAndWait()
+	elif text == "open buzz" or text == "open dual diploma":
+		website = "https://si.next.agilixbuzz.com/student"
+		webbrowser.open_new_tab(website)
+		engine.say("Sure")
+		engine.runAndWait()
 	
 	elif text == "run python game" or text == "run Python game" or text == "ran python game" or text == "ran paiton game" or text == "open Python game" or text == "open python game":
 		run("/Users/alexfoderaro/Coding/Git Projects/python-game/main.py")
 		engine.say("Sure")
 		engine.runAndWait()
+	for url in search(ip, stop=20):
+     	print(url)
 		
 	print("You said: {}".format(text))
 except:
