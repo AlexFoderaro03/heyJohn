@@ -6,9 +6,7 @@ import sys
 from random import choice
 import pyttsx3
 engine = pyttsx3.init()
-def run(runfile):
-  with open(runfile,"r") as rnf:
-    exec(rnf.read())
+#from subprocess import Popen
 '''
 IS_WINDOWS = sys.platform.lower() == "win32"
 
@@ -75,7 +73,7 @@ how_are_you_answers = ["I'm fine thanks!", "I'm good", "I'm feeling very good to
 ans1 = choice(how_are_you_answers)
 
 with sr.Microphone() as source:
-	print("Say anithing: ")
+	print("Say anything: ")
 	audio = r.listen(source)
 
 try:
@@ -113,11 +111,12 @@ try:
 		webbrowser.open_new_tab(website)
 		engine.say("Sure")
 		engine.runAndWait()
+	'''
 	elif text == "run python game" or text == "run Python game" or text == "ran python game" or text == "ran paiton game" or text == "open Python game" or text == "open python game":
-		run("/Users/alexfoderaro/Coding/Git Projects/python-game/main.py")
+		Peopen("/Users/alexfoderaro/Coding/Git Projects/python-game/main.py")
 		engine.say("Sure")
 		engine.runAndWait()
-				
+	'''		
 	print("You said: {}".format(text))
 except:
 	print("Sorry! I can't understand")
