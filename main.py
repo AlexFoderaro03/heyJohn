@@ -127,8 +127,6 @@ try:
 		run("/Users/alexfoderaro/Coding/Git Projects/python-game/main.py")
 		engine.say("Sure")
 		engine.runAndWait()
-	for url in search(ip, stop=20):
-     	print(url)
 		
 	print("You said: {}".format(text))
 except:
