@@ -83,9 +83,6 @@ with sr.Microphone() as source:
 
 try:
 	text = r.recognize_google(audio)
-	file1 = open("./conversation.txt", "w")
-	file1.write(text)
-	file1.close
 
 	if text == "ehi john" or text == "ei John" or text == "hey John" or text == "hey john":
 		engine.say("Yeeesss")
