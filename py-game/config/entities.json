@@ -1,0 +1,522 @@
+{
+  "B": {
+    "name": "Chiavi",
+    "description": "delle chiavi di una Mercedes",
+    "color": "purple",
+    "interactions":{
+      "no-item": {
+        "message": "Potrebbero tornarti utili!",
+        "transform": " ",
+        "pickup": true
+      },
+      "H": {
+        "message":"bravoooooooooo",
+        "transform": " ",
+        "game_over": "Hai spaccato la 🔑... bravoooooooooo gnnnn gnnnn gnuen 👉👈"
+
+      }
+    }
+  },
+  "}": {
+      "name": "chiave",
+      "description": "è la chiave finale!",
+      "color": "cyan",
+      "interactions": {
+          "no-item": {
+              "message": "la raccogli",
+              "transform": " ",
+              "pickup": true
+            },
+          "?": {
+            "message": "Ok CAMPIONEE!!! ",
+            "remove_from_inventory": true
+          }
+          }
+        },
+  "T": {
+    "name": "Topolino",
+    "description": "sono il tuo amico Topolino!!",
+    "color": "rs",
+    "interactions": {
+      "no-item": {
+        "message": "Ciao, sono Topolino! Per ottenere la chiave devi darmi il tuo lanciafiamme... sei pericoloso 🧐 "
+      },
+      "L":{
+        "message": "Grazie!",
+        "remove_from_inventory": true,
+        "transform": "}"
+      }
+    }
+  },
+  "Y":{
+    "name": "Bomboletta spray",
+    "description": "una bomboletta spray di deodorante, dei pazzi la usano come lanciafiamme 🙀 ...",
+    "color": "yellow",
+    "interactions": {
+        "no-item": {
+          "message": "Serve un altro oggetto da combinare per poter utilizzare questo strumento!"
+        },
+        "C":{
+          "message": "Hai visto che avere una 🕯 accesa è sempre utile!",
+          "transform": "L",
+          "remove_from_inventory": true
+        },
+        "*":{
+          "message": "Diciamo che ... i fiammiferi sono utili ecco ... ",
+          "transform": "L",
+          "remove_from_inventory": true
+        },
+        "H": {
+          "message":"bravoovovovog",
+          "transform": " ",
+          "game_over": "Hai spaccato la 🔑... bravoooooooooo daun gnnnn gnnnn gnuen 👉🏼👈🏼 "
+        }
+    }
+  },
+  "L":{
+    "name": "Lanciafiamme",
+    "description": "un lanciafiamme fatto con una candela e una bomboletta spray",
+    "color": "green",
+    "interactions":{
+        "no-item": {
+          "message": "Ora hai un lanciafiamme 🔥 simile a quello di Elon Musk! 😃 ",
+          "transform": " ",
+          "pickup": true
+        },
+        "T":{
+          "message": "Grazie",
+          "transform": "}",
+          "remove_from_inventory": true
+        }
+    }
+  },
+  "&":{
+    "name": "Molletta",
+    "description": "molletta per capelli",
+    "color": "orange",
+    "interactions": {
+      "no-item": {
+        "message": "Una molletta per capelli può sempre essere utile...",
+        "transform": " ",
+        "pickup": true
+      }
+    }
+  },
+
+  "M":{
+    "name": "Macchina",
+    "description": "la tua macchina",
+    "color": "black",
+    "interactions": {
+      "no-item": {
+        "message": "Sai... ti servono le chiavi"
+      },
+      "&":{
+        "message": "Grazie a questa molletta hai fatto partire la macchina ... è ora di fuggire!",
+        "win": "Sei fuggito da quel mostro!"
+      },
+    "B":{
+      "message": "Grazie alle chiavi hai fatto partire la macchina ... è ora di fuggire!",
+      "win": "Sei fuggito da quel mostro!"
+    }
+  }
+ },
+
+  "@":{
+    "name": "Quadro",
+    "description": "un quadro di Van Gogh",
+    "color": "pink",
+    "interactions": {
+      "no-item": {
+        "message": "Dietro quel quadro c'è qualcosa !!!",
+        "transform": "H"
+      }
+    }
+  },
+  "%":{
+    "name": "Quadro",
+    "description": "un quadro di Picasso",
+    "color": "pink",
+    "interactions":{
+      "H": {
+        "message":"bravoov",
+        "transform": " ",
+        "game_over": "Il soggetto del quadro esce e ti sbatte il martello nel naso"
+      }
+    }
+  },
+  ">":{
+    "name": "Quadro",
+    "description": "un quadro di Caravaggio",
+    "color": "pink",
+    "interactions":{
+      "H": {
+        "message":"bravoov",
+        "transform": " ",
+        "game_over": "Il soggetto del quadro esce e ti sbatte il martello nel naso"
+      },
+      "L": {
+        "message": "Hai sciolto il quadro!",
+        "transform": "T"
+      }
+    }
+  },
+  "$":{
+    "name": "Quadro",
+    "description": "un quadro di Monet",
+    "color": "pink",
+    "interactions": {
+      "H": {
+        "message":"bravoovovovog",
+        "transform": " ",
+        "audio": "",
+        "game_over": "Arriva un uomo che ti uccide!!"
+      }
+    }
+   },
+  "Z":{
+    "name": "Porta blindata",
+    "description": " ",
+    "color": "purple",
+    "interactions": {
+      "no-item": {
+        "message": "Non si apre senza chiavi! ☠️☠️☠️ "
+      },
+      "U": {
+        "message": "Sei fortunato! La porta si apre con successo!",
+        "transform": " "
+      },
+      "L": {
+        "message": "Hai fuso la serratura... ora si potrà aprire con la 🔑 K",
+        "transform": "X"
+      }
+    }
+  },
+  "X": {
+    "name": "lucchetto",
+    "description": " ",
+    "color": "black",
+    "interactions": {
+        "no-item": {
+          "message": "Non credo si apra con le mani ☠️ "
+        },
+        "K": {
+          "message": "È la 🔑 giusta!",
+          "transform": " "
+        },
+        "H": {
+          "message": "Non farti problemi ehh! Spacca pure con il martello ⚒ ",
+          "transform": " "
+        }
+    }
+  },
+  "/": {
+    "name": "lucchetto",
+    "description": " ",
+    "color": "black",
+    "interactions": {
+        "no-item": {
+          "message": "Non credo si apra con le mani ☠️ "
+        },
+        "K": {
+          "message": "È la 🔑 giusta!",
+          "transform": " "
+        }
+    }
+  },
+  "?": {
+    "name": "ultimo lucchetto",
+    "description": " ",
+    "color": "black",
+    "interactions": {
+        "no-item": {
+          "message": "Non credo si apra con le mani ☠️ "
+        },
+        "}":{
+          "message": "Complimenti! Sei riuscito ad aprire il lucchetto",
+          "transform": " ",
+          "remove_from_inventory": true
+        }
+    }
+  },
+  "V": {
+    "name": "Candela profumata",
+    "description": "una candela con un aroma di vaniglia",
+    "color": "yellow",
+    "interactions": {
+        "no-item": {
+          "message": "Fa sempre comodo avere con se una candela profumata",
+          "transform": " ",
+          "pickup": true
+        },
+        "*": {
+          "message": "Hai acceso la 🕯 ! Hai 5 minuti prima che si spenga",
+          "transform": "C",
+          "remove_from_inventory": true
+        }
+    }
+  },
+  "C": {
+    "name": "Candela accesa",
+    "description": "una candela con un aroma di vaniglia accesa",
+    "color": "yellow",
+    "interactions": {
+      "no-item":{
+        "message": "Hai ottenuto una 🕯 accesa!",
+        "transform": " ",
+        "pickup": true
+      }
+    }
+  },
+  "*": {
+    "name": "Fiammiferi",
+    "description":"",
+    "color": "black",
+    "interactions":{
+       "no-item": {
+         "message": "Diciamo che ... i fiammiferi sono utili ecco...!",
+         "transform": " ",
+         "pickup": true
+       },
+       "V": {
+         "message": "Hai acceso la 🕯 ! Hai 5 minuti prima che si spenga",
+         "transform": "C",
+         "remove_from_inventory": true
+       },
+       "Y": {
+        "message": "Lanciafiamme in arrivo ...",
+        "transform": "L",
+        "remove_from_inventory": true
+       }
+    }
+  },
+
+  "N": {
+      "name": "Newspaper",
+      "description": "giornale",
+      "color":"purple",
+      "interactions":{
+      "no-item":{
+          "message": "Non se lo sarebbe mai aspettato. Convinto da decenni che nessuno lo avrebbe più scoperto, Raymond Charles Rowe, famoso dj della Pennsylvania noto come DJ Freez, mandava avanti brillantemente la sua carriera esibendosi davanti a un pubblico ignaro di avere davanti a sé un assassino, l'uomo che quattro giorni prima del Natale 1992 aveva ucciso brutalmente Christy Mirack, un'insegnante di scuola media di 25 anni, strangolandola nella sua casa di Lancaster, in Pennsylvania, dopo averla stu****a."
+      }
+    }
+  },
+  "J": {
+      "name": "Newspaper",
+      "description": "giornale",
+      "color":"purple",
+      "interactions":{
+      "no-item":{
+          "message": "Non poteva sapere che la polizia non aveva mai chiuso quel caso e, sconvolta dalla ferocia di quell'omicidio, se l'era legato al dito senza mai smettere di indagare. Così come non poteva immaginare che a tradirlo sarebbe stata, involontariamente, la sorellastra che, iscrivendosi a un sito genealogico dotato di un imponente database di dna, ha permesso agli investigatori di risalire a lui."
+      }
+    }
+  },
+  "=": {
+      "name": "Newspaper",
+      "description": "giornale",
+      "color":"purple",
+      "interactions":{
+      "no-item":{
+        "message": "Scomparso il giudice Reynlods che condannò all'ergastolo il killer DJ!"
+      }
+    }
+  },
+  "+": {
+      "name": "Carta d'identità",
+      "description": "la tua carta d'identità",
+      "color":"yellow",
+      "interactions":{
+      "no-item":{
+        "message": "nome:Frank | cognome:Reynlods | data di nascita:12/07/1974"
+      }
+    }
+  },
+  "^": {
+    "name": "Tapparella",
+    "description":" ",
+    "color": "cyan",
+    "interactions": {
+      "no-item": {
+        "message": "Alzando la tapparella cade una chiave... il tuo rapitore non si aspettava da te tutta questa curiosità ☹️ ...",
+        "transform": "K"
+      }
+    }
+  },
+
+  "H": {
+    "name": "martello",
+    "description": "martello insanguinato ...",
+    "color": "red",
+    "interactions": {
+        "no-item": {
+            "message": "hai raccolto il martello",
+            "transform": " ",
+            "pickup": true
+        }
+    }
+  },
+
+  "!": {
+    "name": "blocco di pietra",
+    "description": "può essere distrutto",
+    "color": "black",
+    "interactions": {
+        "no-item": {
+            "message": "è un po' duro da rompere con le mani"
+        },
+        "H":{
+          "message": "Sembra funzionare! Stai spaccando tutto come non mai 🦄 !",
+          "transform": "Y"
+        }
+    }
+  },
+
+  "O": {
+    "name": "tavolo",
+    "description": "dei semplici tavoli usati dai commensali...",
+    "color": "white",
+    "interactions":{
+      "H": {
+        "message": "wowoowowoow",
+        "transform": " "
+      }
+    }
+  },
+  "K": {
+      "name": "chiave",
+      "description": "e' una piccola chiave",
+      "color": "cyan",
+      "interactions": {
+          "no-item": {
+              "message": "la raccogli",
+              "transform": " ",
+              "pickup": true
+          },
+          "H": {
+            "message":"bravoooooooooo",
+            "transform": " ",
+            "game_over": "Hai spaccato la 🔑... bravoooooooooo daun gnnnn gnnnn gnuen 👉👈 "
+
+          }
+      }
+  },
+  "Q": {
+      "name": "chiave",
+      "description": "e' una grande chiave",
+      "color": "cyan",
+      "interactions": {
+          "no-item": {
+              "message": "la raccogli",
+              "transform": " ",
+              "pickup": true
+          }
+      }
+  },
+    "0": {
+        "name": "porta",
+        "description": "e' una porta",
+        "color": "magenta",
+        "interactions": {
+            "no-item": {
+                "message": "si apre",
+                "move_to_room": 0
+            }
+        }
+    },
+
+    "8": {
+        "name": "porta",
+        "description": "è la porta per l'uscita...",
+        "color": "blue",
+        "interactions": {
+            "no-item": {
+                "message": "si è aperta",
+                "move_to_room": 8
+            }
+        }
+    },
+
+    "1": {
+        "name": "porta",
+        "description": "e' una porta",
+        "color": "blue",
+        "interactions": {
+            "no-item": {
+                "message": "si apre",
+                "move_to_room": 1
+            }
+        }
+    },
+
+    "2": {
+        "name": "porta",
+        "description": "e' una porta",
+        "color": "blue",
+        "interactions": {
+            "no-item": {
+                "message": "si apre",
+                "move_to_room": 2
+            }
+        }
+    },
+
+    "3": {
+        "name": "porta",
+        "description": "e' una porta",
+        "color": "blue",
+        "interactions": {
+            "no-item": {
+                "message": "si apre",
+                "move_to_room": 3
+            }
+        }
+    },
+
+    "4": {
+        "name": "porta",
+        "description": "e' una porta",
+        "color": "blue",
+        "interactions": {
+            "no-item": {
+                "message": "si apre",
+                "move_to_room": 4
+            }
+        }
+    },
+
+    "5": {
+        "name": "porta",
+        "description": "e' una porta",
+        "color": "blue",
+        "interactions": {
+            "no-item": {
+                "message": "si apre",
+                "move_to_room": 5
+            }
+        }
+    },
+
+    "6": {
+        "name": "porta",
+        "description": "e' una porta",
+        "color": "blue",
+        "interactions": {
+            "no-item": {
+                "message": "si apre",
+                "move_to_room": 6
+            }
+        }
+    },
+
+    "7": {
+        "name": "porta",
+        "description": "e' una porta",
+        "color": "blue",
+        "interactions": {
+            "no-item": {
+                "message": "si apre",
+                "move_to_room": 7
+            }
+       }
+    }
+}

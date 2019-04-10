@@ -6,7 +6,11 @@ import sys
 from random import choice
 import pyttsx3
 engine = pyttsx3.init()
-#from subprocess import Popen
+
+
+def run(runfile):
+  with open(runfile,"r") as rnf:
+    exec(rnf.read())
 '''
 IS_WINDOWS = sys.platform.lower() == "win32"
 
@@ -111,12 +115,12 @@ try:
 		webbrowser.open_new_tab(website)
 		engine.say("Sure")
 		engine.runAndWait()
-	'''
+	
 	elif text == "run python game" or text == "run Python game" or text == "ran python game" or text == "ran paiton game" or text == "open Python game" or text == "open python game":
-		Peopen("/Users/alexfoderaro/Coding/Git Projects/python-game/main.py")
+		run("/Users/alexfoderaro/Coding/Git Projects/python-game/main.py")
 		engine.say("Sure")
 		engine.runAndWait()
-	'''		
+		
 	print("You said: {}".format(text))
 except:
 	print("Sorry! I can't understand")
