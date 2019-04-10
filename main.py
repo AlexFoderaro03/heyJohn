@@ -46,6 +46,13 @@ with sr.Microphone() as source:
 			webbrowser.open_new_tab(website)
 			engine.say("Sure")
 			engine.runAndWait()
+		elif text == "open instagram" or text == "open Instagram":
+			website = "https://www.instagram.com/"
+			webbrowser.open_new_tab(website)
+			engine.say("Sure")
+			engine.runAndWait()
+
+			
 			
 			
 		print("You said: {}".format(text))
