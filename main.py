@@ -117,7 +117,7 @@ try:
 		webbrowser.open_new_tab(website)
 		engine.say("Sure")
 		engine.runAndWait()
-	elif text == "open buzz" or text == "open dual diploma":
+	elif text == "open buzz" or text == "open dual diploma" or text == "duel diploma":
 		website = "https://si.next.agilixbuzz.com/student"
 		webbrowser.open_new_tab(website)
 		engine.say("Sure")
