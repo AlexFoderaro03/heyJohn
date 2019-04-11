@@ -83,6 +83,9 @@ with sr.Microphone() as source:
 
 try:
 	text = r.recognize_google(audio)
+	file1 = open("./conversation.txt", "w")
+	file1.write(text)
+	file1.close
 
 	if text == "ehi john" or text == "ei John" or text == "hey John" or text == "hey john":
 		engine.say("Yeeesss")
@@ -123,7 +126,7 @@ try:
 		run("/Users/alexfoderaro/Coding/Git Projects/python-game/main.py")
 		engine.say("Sure")
 		engine.runAndWait()
-		
+	
 	print("You said: {}".format(text))
 except:
 	print("Sorry! I can't understand")
