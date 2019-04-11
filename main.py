@@ -90,6 +90,7 @@ try:
 	if text == "ehi john" or text == "ei John" or text == "hey John" or text == "hey john":
 		engine.say("Yeeesss")
 		engine.runAndWait()
+	elif text == "hi" or text == "hai"
 	elif text == "open YouTube" or text == "open youtube":
 		website = "https://www.youtube.com"
 		webbrowser.open_new_tab(website)
