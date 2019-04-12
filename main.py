@@ -75,7 +75,10 @@ else:
 '''
 r = sr.Recognizer()
 how_are_you_answers = ["I'm fine thanks!", "I'm good", "I'm feeling very good today!", "Hi, I'm fine!"]
+hi_q = ["Hi!", "Hello", "hi", "Hi there!", "Hi there", "Hi how are you?", "Hi what's up?"]
+
 ans1 = choice(how_are_you_answers)
+ans2 = choice(hi_q)
 
 with sr.Microphone() as source:
 	print("Say anything: ")
@@ -90,7 +93,17 @@ try:
 	if text == "ehi john" or text == "ei John" or text == "hey John" or text == "hey john":
 		engine.say("Yeeesss")
 		engine.runAndWait()
-	elif text == "hi" or text == "hai"
+	elif text == "hi" or text == "hai":
+		engine.say(ans2)
+		engine.runAndWait()
+		if text == "i'm fine" or text == "i'm fine thanks" or text == "I'm fine" or text == "i'm fine" or text == "i'm good thanks":
+			engine.say("I'm happy you are fine!")
+			engine.runAndWait()
+		elif text == "i'm fine and you" or text == "fine and you" or text == "i'm good and you" or text == "i'm fine and you":
+			engine.say("I'm fine!")
+	elif text == "how are you" or text == "how you are you feeling" or text == "hi how you are you feeling" or text == "hello how you are you feeling":
+		engine.say("I'm fine thanks")
+		engine.runAndWait()
 	elif text == "open YouTube" or text == "open youtube":
 		website = "https://www.youtube.com"
 		webbrowser.open_new_tab(website)
