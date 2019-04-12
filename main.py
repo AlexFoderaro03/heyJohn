@@ -139,6 +139,13 @@ try:
 		webbrowser.open_new_tab(website)
 		engine.say("Sure")
 		engine.runAndWait()
+	elif text == "open git hub" or text == "open GitHub" or text == "open github" or text == "open git ab" or text == "open gitab":
+		website = "https://github.com/"
+		webbrowser.open_new_tab(website)
+		engine.say("Sure")
+		engine.runAndWait()
+
+
 	'''
 	elif text == "run python game" or text == "run Python game" or text == "ran python game" or text == "ran paiton game" or text == "open Python game" or text == "open python game":
 		run("/Users/alexfoderaro/Coding/Git Projects/python-game/main.py")
