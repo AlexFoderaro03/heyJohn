@@ -12,11 +12,8 @@ engine = pyttsx3.init()
 def run(runfile):
   with open(runfile,"r") as rnf:
     exec(rnf.read())
-
-print()
-print()
-print()
-name = str(input(colored("What's your name? ", "green")))
+file1 = open("yourname.txt", "r")
+name = file1.readline()
 print()
 print()
 print()
@@ -104,6 +101,12 @@ def main():
 			elif text == "flip a coin":
 				flip = ["heads", "tails"]
 				ans3 = choice(flip)
+				engine.say("It's flipping!")
+				engine.runAndWait()
+				print()
+				print()
+				print()
+				print(ans3)
 
 			elif text == "quit" or text == "Quit" or text == "exit" or text == "Exit":
 				quit()
