@@ -134,7 +134,7 @@ try:
 		webbrowser.open_new_tab(website)
 		engine.say("Sure")
 		engine.runAndWait()
-	elif text == "open latin dictionary" or text == "open Latin's dictionary" or text == "open Latin dictionary" or text == "open late dictionary" or text == "open late in dictionary"
+	elif text == "open latin dictionary" or text == "open Latin's dictionary" or text == "open Latin dictionary" or text == "open late dictionary" or text == "open late in dictionary":
 		website = "https://www.dizionario-latino.com/"
 		webbrowser.open_new_tab(website)
 		engine.say("Sure")
