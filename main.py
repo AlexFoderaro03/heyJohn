@@ -101,6 +101,10 @@ def main():
 				engine.say("Opening the alarm", name)
 				engine.runAndWait()
 				os.system('python3 alarm.py')
+			elif text == "flip a coin":
+				flip = ["heads", "tails"]
+				ans3 = choice(flip)
+
 			elif text == "quit" or text == "Quit" or text == "exit" or text == "Exit":
 				quit()
 				engine.say("Ok")
