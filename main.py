@@ -134,6 +134,11 @@ try:
 		webbrowser.open_new_tab(website)
 		engine.say("Sure")
 		engine.runAndWait()
+	elif text == "open latin dictionary" or text == "open Latin's dictionary" or text == "open Latin dictionary" or text == "open late dictionary" or text == "open late in dictionary"
+		website = "https://www.dizionario-latino.com/"
+		webbrowser.open_new_tab(website)
+		engine.say("Sure")
+		engine.runAndWait()
 	'''
 	elif text == "run python game" or text == "run Python game" or text == "ran python game" or text == "ran paiton game" or text == "open Python game" or text == "open python game":
 		run("/Users/alexfoderaro/Coding/Git Projects/python-game/main.py")
