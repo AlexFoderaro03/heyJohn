@@ -69,7 +69,8 @@ if IS_WINDOWS:
 
 else:
 '''
-name = str(input("What's your name? ", "green"))
+print()
+name = str(input(colored("What's your name? ", "green")))
 print()
 def main():
 	while True:
@@ -154,6 +155,7 @@ def main():
 		except:
 			if text == "quit" or text == "Quit" or text == "exit" or text == "Exit":
 				quit()
-			print("Sorry! I can't understand", name)
+			icantUndersatand = colored("Sorry! I can't understand", "red")
+			print(icantUndersatand, name)
 
 main()
