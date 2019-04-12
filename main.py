@@ -26,9 +26,6 @@ if IS_WINDOWS:
 
 	try:
 		text = r.recognize_google(audio)
-		file1 = open("./conversation.txt", "w")
-		file1.write(text)
-		file1.close
 
 		if text == "ehi john" or text == "ei John" or text == "hey John" or text == "hey john":
 			engine.say("Yeeesss")
@@ -86,9 +83,6 @@ with sr.Microphone() as source:
 
 try:
 	text = r.recognize_google(audio)
-	file1 = open("./conversation.txt", "w")
-	file1.write(text)
-	file1.close
 
 	if text == "ehi john" or text == "ei John" or text == "hey John" or text == "hey john":
 		engine.say("Yeeesss")
@@ -101,7 +95,7 @@ try:
 			engine.runAndWait()
 		elif text == "i'm fine and you" or text == "fine and you" or text == "i'm good and you" or text == "i'm fine and you":
 			engine.say("I'm fine!")
-	elif text == "how are you" or text == "how you are you feeling" or text == "hi how you are you feeling" or text == "hello how you are you feeling":
+	elif text == "how are you" or text == "how are you feeling" or text == "hi how are you" or text == "hello how you are you feeling":
 		engine.say("I'm fine thanks")
 		engine.runAndWait()
 	elif text == "open YouTube" or text == "open youtube":
