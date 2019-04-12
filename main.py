@@ -1,5 +1,6 @@
 import speech_recognition as sr
 import webbrowser
+import os
 from termcolor import colored
 import subprocess
 import random
@@ -93,11 +94,14 @@ def main():
 			elif text == "what's my name" or text == "what is my name" :
 				engine.say(name)
 				engine.runAndWait()
+			elif text == "set an alarm" or text == "set me an alarm" or text == "can you set me an alarm" or text == "set an alarm for me":
+				os.system('python3 alarm.py')
+				engine.say("Opening Alarm.py")
+				engine.runAndWait()
 			elif text == "quit" or text == "Quit" or text == "exit" or text == "Exit":
 				quit()
 				engine.say("Ok")
 				engine.runAndWait()
-
 			print()
 			print()
 			print()
