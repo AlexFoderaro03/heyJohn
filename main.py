@@ -72,6 +72,8 @@ else:
 print()
 name = str(input(colored("What's your name? ", "green")))
 print()
+print()
+print()
 def main():
 	while True:
 		r = sr.Recognizer()
@@ -82,7 +84,7 @@ def main():
 		ans2 = choice(hi_q)
 
 		with sr.Microphone() as source:
-			print("Say anything: ")
+			print(colored("Say anything: ", "blue"))
 			audio = r.listen(source)
 
 		try:
@@ -151,7 +153,10 @@ def main():
 				engine.say("Ok")
 				engine.runAndWait()
 
-			print("You said: {}".format(text))
+			print()
+			print()
+			print()
+			print(colored("You said: {}".format(text), "yellow"))
 		except:
 			if text == "quit" or text == "Quit" or text == "exit" or text == "Exit":
 				quit()
