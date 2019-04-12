@@ -1,5 +1,6 @@
 import speech_recognition as sr
 import webbrowser
+from termcolor import colored
 import subprocess
 import random
 import sys
@@ -68,7 +69,8 @@ if IS_WINDOWS:
 
 else:
 '''
-name = str(input("What's your name? "))
+name = str(input("What's your name? ", "green"))
+print()
 def main():
 	while True:
 		r = sr.Recognizer()
