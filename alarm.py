@@ -19,7 +19,7 @@ def SubmitButton():
         CurrentTime = time.strftime("%H:%M")
         time.sleep(1)
     if AlarmTime == CurrentTime:
-        print("now Alarm Musing Playing")
+        print("now Alarm Playing")
         os.system("start alarm-music.mp3")
         label2.config(text="Alarm music playing.....")
         messagebox.showinfo(title='Alarm Message', message="{}".format(entry2.get()))
