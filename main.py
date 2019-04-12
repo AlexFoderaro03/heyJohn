@@ -69,7 +69,7 @@ if IS_WINDOWS:
 
 else:
 '''
-def main():
+while True:
 	r = sr.Recognizer()
 	how_are_you_answers = ["I'm fine thanks!", "I'm good", "I'm feeling very good today!", "Hi, I'm fine!"]
 	hi_q = ["Hi!", "Hello", "hi", "Hi there!", "Hi there", "Hi how are you?", "Hi what's up?"]
@@ -144,6 +144,10 @@ def main():
 			webbrowser.open_new_tab(website)
 			engine.say("Sure")
 			engine.runAndWait()
+		elif text == "thanks" or text == "thank you" or text == "appreciate it" or text == "thanks bro":
+			quit()
+			engine.say("you are welcome homie")
+			engine.runAndWait()
 		elif text == "quit" or text == "Quit" or text == "exit" or text == "Exit":
 			quit()
 			engine.say("Ok")
@@ -151,6 +155,8 @@ def main():
 
 		print("You said: {}".format(text))
 	except:
+		if text == "quit" or text == "Quit" or text == "exit" or text == "Exit":
+			quit()
 		print("Sorry! I can't understand")
 
 main()
