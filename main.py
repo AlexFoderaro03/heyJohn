@@ -47,7 +47,7 @@ def main():
 					engine.runAndWait()
 				elif text == "i'm fine and you" or text == "fine and you" or text == "i'm good and you" or text == "i'm fine and you":
 					engine.say("I'm fine!")
-			elif text == "how are you" or text == "how are you feeling" or text == "hi how are you" or text == "hello John how you are you" or text == "hi John how you are you":
+			elif text == "how are you" or text == "how are you feeling" or text == "hi how are you" or text == "hello John how are you" or text == "hi John how are you you":
 				engine.say("I'm fine thanks")
 				engine.runAndWait()
 			elif text == "open YouTube" or text == "open youtube" or text == "can you open youtube":
@@ -91,13 +91,17 @@ def main():
 			elif text == "what's your name" or text == "what is your name" :
 				engine.say("My name is John. I was programmed, by Alex Foderaro. you can follow him on Instagram if you want.")
 				engine.runAndWait()
+			elif text == "open WhatsApp spammer" or text == "open whatsapp spammer" or text == "open whatsapp spammer please" :
+				engine.say("Here I come!")
+				engine.runAndWait()
+				os.system('python3 spammer.py')
 			elif text == "what's my name" or text == "what is my name" :
 				engine.say(name)
 				engine.runAndWait()
 			elif text == "set an alarm" or text == "set me an alarm" or text == "can you set me an alarm" or text == "set an alarm for me":
-				os.system('python3 alarm.py')
-				engine.say("Opening Alarm.py")
+				engine.say("Opening the alarm", name)
 				engine.runAndWait()
+				os.system('python3 alarm.py')
 			elif text == "quit" or text == "Quit" or text == "exit" or text == "Exit":
 				quit()
 				engine.say("Ok")
