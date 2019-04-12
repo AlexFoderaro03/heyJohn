@@ -91,10 +91,9 @@ def main():
 			elif text == "what's your name" or text == "what is your name" :
 				engine.say("My name is John. I was programmed, by Alex Foderaro. you can follow him on Instagram if you want.")
 				engine.runAndWait()
-			elif text == "open WhatsApp spammer" or text == "open whatsapp spammer" or text == "open whatsapp spammer please" :
-				engine.say("Here I come!")
+			elif text == "sing a song":
+				engine.say("Only wear designer, esskeetit. Hoppin' out the Wraith, esskeetit Smashin' on your bitch, esskeetit Runnin' up a check with no limit.Poppin' on X, poppin' on XPoppin' on X, pills (yuh, X)Got a new car, got a new bitch  yeah And I got a new deal")
 				engine.runAndWait()
-				os.system('python3 spammer.py')
 			elif text == "what's my name" or text == "what is my name" :
 				engine.say(name)
 				engine.runAndWait()
