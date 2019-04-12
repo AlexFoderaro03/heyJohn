@@ -145,7 +145,6 @@ while True:
 			engine.say("Sure")
 			engine.runAndWait()
 		elif text == "thanks" or text == "thank you" or text == "appreciate it" or text == "thanks bro":
-			quit()
 			engine.say("you are welcome homie")
 			engine.runAndWait()
 		elif text == "quit" or text == "Quit" or text == "exit" or text == "Exit":
