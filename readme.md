@@ -6,4 +6,19 @@
 - To exit the program say "Quit" or "Exit"
 
 #
+Interactions: 
+- "hey John";
+- "hi John"; 
+- "how are you";
+- "open YouTube";
+- "open Google";
+- "open Gmail";
+- "open instagram";
+- "open WhatsApp";
+- "open GitHub";
+- "what's your name";
+- "what's my name"
+
+*still working on it ...*
+#
 ##### *Alex Foderaro* → [@alexfoderaro](https://www.instagram.com/alexfoderaro/)

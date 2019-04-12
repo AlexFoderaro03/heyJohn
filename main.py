@@ -11,64 +11,9 @@ engine = pyttsx3.init()
 def run(runfile):
   with open(runfile,"r") as rnf:
     exec(rnf.read())
-'''
-IS_WINDOWS = sys.platform.lower() == "win32"
 
-if IS_WINDOWS:
-	r = sr.Recognizer()
-	how_are_you_answers = ["I'm fine thanks!", "I'm good", "I'm feeling very good today!", "Hi, I'm fine!"]
-	ans1 = choice(how_are_you_answers)
-
-	with sr.Microphone() as source:
-		print("Say anithing: ")
-		audio = r.listen(source)
-
-	try:
-		text = r.recognize_google(audio)
-
-		if text == "ehi john" or text == "ei John" or text == "hey John" or text == "hey john":
-			engine.say("Yeeesss")
-			engine.runAndWait()
-		elif text == "open YouTube" or text == "open youtube":
-			website = "https://www.youtube.com"
-			webbrowser.open_new_tab(website)
-			engine.say("Sure")
-			engine.runAndWait()
-		elif text == "open Google" or text == "open google":
-			website = "https://www.google.com"
-			webbrowser.open_new_tab(website)
-			engine.say("Sure")
-			engine.runAndWait()
-		elif text == "hi, how are you?" or text == "hi how are you" or text == "hi how are you?":
-			engine.say(ans1)
-			engine.runAndWait()
-		elif text == "how are you?" or text == "how are you" or text == "how are you?":
-			engine.say(ans1)
-			engine.runAndWait()
-		elif text == "open gmail" or text == "open gimail" or text == "open Gmail?":
-			website = "https://mail.google.com/mail/u/0/"
-			webbrowser.open_new_tab(website)
-			engine.say("Sure")
-			engine.runAndWait()
-		elif text == "open instagram" or text == "open Instagram":
-			website = "https://www.instagram.com/"
-			webbrowser.open_new_tab(website)
-			engine.say("Sure")
-			engine.runAndWait()
-
-			
-			
-			
-		print("You said: {}".format(text))
-	except:
-		print("Sorry! I can't understand")
-
-
-
-###UNIX ==> different way to open apps
-
-else:
-'''
+print()
+print()
 print()
 name = str(input(colored("What's your name? ", "green")))
 print()
@@ -101,7 +46,7 @@ def main():
 					engine.runAndWait()
 				elif text == "i'm fine and you" or text == "fine and you" or text == "i'm good and you" or text == "i'm fine and you":
 					engine.say("I'm fine!")
-			elif text == "how are you" or text == "how are you feeling" or text == "hi how are you" or text == "hello how you are you feeling":
+			elif text == "how are you" or text == "how are you feeling" or text == "hi how are you" or text == "hello John how you are you" or text == "hi John how you are you":
 				engine.say("I'm fine thanks")
 				engine.runAndWait()
 			elif text == "open YouTube" or text == "open youtube" or text == "can you open youtube":
@@ -112,10 +57,7 @@ def main():
 			elif text == "open Google" or text == "open google" or text == "can you open google":
 				website = "https://www.google.com"
 				webbrowser.open_new_tab(website)
-				engine.say("Sure")
-				engine.runAndWait()
-			elif text == "hi how are you" or text == "how are you":
-				engine.say(ans1)
+				engine.say("Sure", name)
 				engine.runAndWait()
 			elif text == "open gmail" or text == "open gimail" or text == "open Gmail" or text == "can you open Gmail":
 				website = "https://mail.google.com/mail/u/0/"
@@ -145,6 +87,9 @@ def main():
 			elif text == "thanks" or text == "thank you" or text == "appreciate it" or text == "thanks bro":
 				engine.say("you are welcome", name)
 				engine.runAndWait()
+			elif text == "what's your name" or text == "what is your name" :
+				engine.say("My name is John. I was programmed, by Alex Foderaro. you can follow him on Instagram if you want.")
+				engine.runAndWait()
 			elif text == "what's my name" or text == "what is my name" :
 				engine.say(name)
 				engine.runAndWait()
@@ -157,6 +102,9 @@ def main():
 			print()
 			print()
 			print(colored("You said: {}".format(text), "yellow"))
+			print()
+			print()
+			print()
 		except:
 			if text == "quit" or text == "Quit" or text == "exit" or text == "Exit":
 				quit()
