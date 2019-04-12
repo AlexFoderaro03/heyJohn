@@ -107,7 +107,6 @@ def main():
 				print()
 				print()
 				print(ans3)
-
 			elif text == "quit" or text == "Quit" or text == "exit" or text == "Exit":
 				quit()
 				engine.say("Ok")
