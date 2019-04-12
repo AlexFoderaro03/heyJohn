@@ -3,6 +3,6 @@
 ###### Right now it has only two features:
 - It opens Google, YouTube, Gmail, Instagram, Whatsapp, GitHub;
 - You can ask him : "How are you?", and he will reply to your question!
-- Every time you say something, after his reply you have to restart the program (fixing)
+- To exit the program say "Quit" (everytime the assistant replies to you, you need to restart the program)
 
 ##### *Alex Foderaro* ==> [@alexfoderaro](https://www.instagram.com/alexfoderaro/)
