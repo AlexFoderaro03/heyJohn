@@ -2,6 +2,7 @@ import speech_recognition as sr
 import webbrowser
 import os
 from termcolor import colored
+import keyboard
 import subprocess
 import random
 import sys
@@ -17,7 +18,27 @@ name = file1.readline()
 print()
 print()
 print()
+
 def main():
+	while True:
+		b = sr.Recognizer()
+		with sr.Microphone() as source:
+			audio = b.listen(source)
+		try:
+			text = b.recognize_google(audio)
+			if text == "ehi john" or text == "ei John" or text == "hey John" or text == "hey john" or text == "okay John" or text == "ok John" or text == "ok john":
+				engine.say("Yesss")
+				engine.runAndWait()
+				john()
+				quit()
+			elif text == "quit" or text == "Quit" or text == "exit" or text == "Exit" or text == "stop" or text == "Stop":
+				quit()
+			else:
+				main()
+		except:
+			icantUndersatand = colored("Sorry! I can't understand", "red")
+
+def john():
 	while True:
 		r = sr.Recognizer()
 		how_are_you_answers = ["I'm fine thanks!", "I'm good", "I'm feeling very good today!", "Hi, I'm fine!"]
@@ -33,10 +54,7 @@ def main():
 		try:
 			text = r.recognize_google(audio)
 
-			if text == "ehi john" or text == "ei John" or text == "hey John" or text == "hey john":
-				engine.say("Yeeesss", name)
-				engine.runAndWait()
-			elif text == "hi" or text == "hai" or text == "hi Jon" or text == "hi John":
+			if text == "hi" or text == "hai" or text == "hi Jon" or text == "hi John":
 				engine.say(ans2)
 				engine.runAndWait()
 				if text == "i'm fine" or text == "i'm fine thanks" or text == "I'm fine" or text == "i'm fine" or text == "i'm good thanks":
@@ -107,10 +125,6 @@ def main():
 				print()
 				print()
 				print(ans3)
-			elif text == "quit" or text == "Quit" or text == "exit" or text == "Exit":
-				quit()
-				engine.say("Ok")
-				engine.runAndWait()
 			print()
 			print()
 			print()
@@ -119,7 +133,7 @@ def main():
 			print()
 			print()
 		except:
-			if text == "quit" or text == "Quit" or text == "exit" or text == "Exit":
+			if text == "quit" or text == "Quit" or text == "exit" or text == "Exit" or text == "stop" or text == "Stop":
 				quit()
 			icantUndersatand = colored("Sorry! I can't understand", "red")
 			print(icantUndersatand, name)
