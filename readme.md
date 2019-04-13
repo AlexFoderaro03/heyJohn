@@ -21,7 +21,7 @@ Interactions:
 - "what's your name";
 - "what's my name"
 
-Before starting with main.py, you should run *"createaccount.py"* or write your name on the *"yourname.txt"* file by yourself.
+Before starting you should write your name on the *"yourname.txt"* file by yourself.
 ###
 ###### *still working on it ...*
 #
