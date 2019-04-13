@@ -5,7 +5,7 @@
 - You can ask him : "How are you?", and he will reply to your question!
 - To exit the program say "Quit" or "Exit"
 
-#####Implemented "Ok John"; "Hey John"" to start talking to him (it won't stop unless you press ctrl+c => fixing)
+Implemented "Ok John"; "Hey John"" to start talking to him (it won't stop unless you press ctrl+c => fixing)
 
 #
 Interactions: 
