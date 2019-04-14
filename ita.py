@@ -11,7 +11,7 @@ import requests
 from random import choice
 import pyttsx3
 engine = pyttsx3.init()
-engine.setProperty("rate", 170)
+engine.setProperty("rate", 160)
 engine.setProperty('voice', 'Luca')
 def run(runfile):
   with open(runfile,"r") as rnf:
@@ -47,6 +47,8 @@ def john():
 		how_are_you_answers = ["Sto bene grazie", "Sto bene", "Sto molto bene oggi", "Bene, grazie"]
 		hi_q = ["Ciao!", "Hey ciao", "Hey"]
 		jokes = ["Che cosa hanno in comune un televisore e una formica? Le antenne!", "Qual è la città preferita dai ragni? Mosca!", "Qual è la pianta più puzzolente? Quella dei piedi!", "Che cos'è una zebra? Un cavallo evaso dal carcere!", "Sapete perché il pomodoro non riesce a dormire? Perché l’insalata… russa!", "Cosa fa un carabiniere in aeroporto? Offre noccioline al Jumbo!", "Qual è il cane più cattivo? La canaglia", "Il miglior cane da guardia è lo 00 Setter.", "Qual è il colmo per un macellaio quando cambia discorso? Tagliare la testa al toro", "Come si dice uno scontro tra due carrelli? Scontrino!", "Cosa fa il dente del giudizio? Giudica i molari! ", "Quale sistema operativo non possono usare i ciechi? Windows Vista.", "Un poliziotto va da una gang di computer: 'vi arresto il sistema'. ", "Se sentite delle sirene avvicinarsi non vi preoccupate. Ho appena arrestato il PC! "]
+		ceninii = ["Hai avuto una conoscienza approfondita del capitolo. Spesso sei entrato anche nei particolari. Hai riscontrato un po' di difficoltà e incertezza in letteratura. Possiamo dire che è stata un interrogazione discreta. Ti do 7 +", "Questa verifica è andata abbastanza bene. Qualche erore di grammatica e di lessico. Tutto sommato hai fatto una buona verifica. Ti do 6 e mezzo, anzi no. Ti do 6 +"]
+		jc = choice(ceninii)
 		jk = choice(jokes)
 		ans1 = choice(how_are_you_answers)
 		ans2 = choice(hi_q)
@@ -70,7 +72,7 @@ def john():
 				engine.say("Sto benissimo!")
 				engine.runAndWait()
 			elif text == "Ciao Cenini" or text == "Ciao cenini" or text == "Cenini" or text == "cenini":
-				engine.say("Hai avuto una conoscienza approfondita del capitolo. Spesso sei entrato anche nei particolari. Hai riscontrato un po' di difficoltà e incertezza in letteratura. Possiamo dire che è stata un interrogazione discreta. Ti do 7 +")
+				engine.say(jc)
 				engine.runAndWait()
 			elif text == "Apri YouTube" or text == "Aprimi YouTube" or text == "Puoi aprire YouTube" or text == "Puoi aprirmi youtube" or text == "Puoi aprirmi YouTube":
 				website = "https://www.youtube.com"
@@ -120,17 +122,7 @@ def john():
 				engine.say("Sto accendendo l'orologio", name)
 				engine.runAndWait()
 				os.system('python3 alarm.py')
-			'''
-			elif text == "Fammi una ricerca su Google" or text == "Puoi cercare qualcosa su Google" or text == "Cerca su Google" or text == "puoi cercare qualcosa su Google" or text == "cerca su Google":
-				engine.say("Cosa desideri cercare?")
-				y = sr.Recognizer()
-				with sr.Microphone() as source:
-					audio = y.listen(source)
-				ricerca = y.recognize_google(audio, language="it-IT")
-				query = ricerca
-				for j in search(query, tld="co.in", num=10, stop=1, pause=2):
-					print(j)
-			'''
+
 			elif text == "Lancia una moneta":
 				flip = ["testa", "croce"]
 				ans3 = choice(flip)
