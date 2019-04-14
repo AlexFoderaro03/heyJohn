@@ -127,7 +127,6 @@ def john():
 				engine.say("Sto accendendo l'orologio", name)
 				engine.runAndWait()
 				os.system('python3 alarm.py')
-
 			elif text == "Lancia una moneta":
 				flip = ["testa", "croce"]
 				ans3 = choice(flip)
@@ -136,6 +135,9 @@ def john():
 				print()
 				print()
 				print()
+			elif text == "esplodi" or text == "Esplodi" or text == "autodistruzione":
+				engine.say("bi bi bi bi bip. Bouuuummm. Sono esploduto")
+				engine.runAndWait()
 			elif text == "Quanti anni hai?" or text == "Quanti anni hai":
 				engine.say("L'età è un indicatore difficile da contare per un'intelligenza artificiale. Potrei contare le righe del mio codice ma una volta finito, sarò già cresciuto.")
 				engine.runAndWait()
