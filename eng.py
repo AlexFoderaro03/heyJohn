@@ -28,7 +28,7 @@ def main():
 			audio = b.listen(source)
 		try:
 			text = b.recognize_google(audio)
-			if text == "ehi john" or text == "ei John" or text == "hey John" or text == "hey john" or text == "okay John" or text == "ok John" or text == "ok john":
+			if text == "ehi john" or text == "ei John" or text == "hei John" or text == "hei john" or text == "okay John" or text == "ok John" or text == "ok john":
 				engine.say("Yesss")
 				engine.runAndWait()
 				john()
