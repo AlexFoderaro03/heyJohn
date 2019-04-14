@@ -10,6 +10,8 @@ import requests
 from random import choice
 import pyttsx3
 engine = pyttsx3.init()
+engine.setProperty("rate", 190)
+#engine.setProperty("voice", "Samantha")
 def run(runfile):
   with open(runfile,"r") as rnf:
     exec(rnf.read())
@@ -43,7 +45,8 @@ def john():
 		r = sr.Recognizer()
 		how_are_you_answers = ["I'm fine thanks!", "I'm good", "I'm feeling very good today!", "Hi, I'm fine!"]
 		hi_q = ["Hi!", "Hello", "hi", "Hi there!", "Hi there", "Hi how are you?", "Hi what's up?"]
-
+		jokes = ["How do you call a man with a rubber toe? Roberto.", "Did you hear about the restaurant on the moon? Great food, no atmosphere.", "What do you call a fake noodle? An Impasta.", "How many apples grow on a tree? All of them.", "Want to hear a joke about paper? Nevermind it's tearable.", "How does a penguin build it's house? Igloos it together.", "Two goldfish are in a tank. One says to the other, 'do you know how to drive this thing?'", "I would avoid the sushi if I was you. It’s a little fishy.", "What's brown and sticky? A stick.", "Why do you never see elephants hiding in trees? Because they're so good at it.", "Did you hear about the kidnapping at school? It's fine, he woke up.", "A furniture store keeps calling me. All I wanted was one night stand.", "Did I tell you the time I fell in love during a backflip? I was heels over head.", "People don’t like having to bend over to get their drinks. We really need to raise the bar."]
+		jk = choice(jokes)
 		ans1 = choice(how_are_you_answers)
 		ans2 = choice(hi_q)
 
@@ -125,6 +128,12 @@ def john():
 				print()
 				print()
 				print(ans3)
+			elif text == "how old are you":
+				engine.say("It's not easy to enumerate the years of an artificial intelligence system. I could enumerate the lines of my code as I would be a tree, but once I finished I may be grown.")
+				engine.runAndWait()
+			elif text == "tell me a joke" or text == "can you tell me a joke" or text == "please tell me a joke" or text == "hey tell me a joke":
+				engine.say(jk)
+				engine.runAndWait()
 			print()
 			print()
 			print()
