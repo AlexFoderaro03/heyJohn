@@ -14,6 +14,6 @@ Implementato "Ok John"; "Hey John"" per iniziare la conversazione (non parlerà 
 
 Prima di far partire il programma dovresti scrivere il tuo nome nel file *"yourname.txt"*.
 ###
-###### *still working on it ...*
+###### *ancora in fase di sviluppo ...*
 #
 ##### *Alex Foderaro* → [@alexfoderaro](https://www.instagram.com/alexfoderaro/)
