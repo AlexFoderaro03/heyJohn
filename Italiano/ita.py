@@ -29,8 +29,8 @@ def main():
 			audio = b.listen(source)
 		try:
 			text = b.recognize_google(audio, language="it-IT")
-			if text == "Ehi john" or text == "Ei John" or text == "Hei John" or text == "Hei john" or text == "Okay John" or text == "Ok John" or text == "OK John":
-				engine.say("Dimmi ...")
+			if text == "Ehi John" or text == "Ei John" or text == "Hei John" or text == "Hei john" or text == "Okay John" or text == "Ok John" or text == "OK John":
+				engine.say("Dimmi ..." )
 				engine.runAndWait()
 				john()
 				quit()
@@ -45,7 +45,7 @@ def john():
 	while True:
 		r = sr.Recognizer()
 		how_are_you_answers = ["Sto bene grazie", "Sto bene", "Sto molto bene oggi", "Bene, grazie"]
-		hi_q = ["Ciao!", "Hey ciao", "Hey"]
+		hi_q = ["Ciao!", "Hey ciao", "Eilà"]
 		jokes = ["Che cosa hanno in comune un televisore e una formica? Le antenne!", "Qual è la città preferita dai ragni? Mosca!", "Qual è la pianta più puzzolente? Quella dei piedi!", "Che cos'è una zebra? Un cavallo evaso dal carcere!", "Sapete perché il pomodoro non riesce a dormire? Perché l’insalata… russa!", "Cosa fa un carabiniere in aeroporto? Offre noccioline al Jumbo!", "Qual è il cane più cattivo? La canaglia", "Il miglior cane da guardia è lo 00 Setter.", "Qual è il colmo per un macellaio quando cambia discorso? Tagliare la testa al toro", "Come si dice uno scontro tra due carrelli? Scontrino!", "Cosa fa il dente del giudizio? Giudica i molari! ", "Quale sistema operativo non possono usare i ciechi? Windows Vista.", "Un poliziotto va da una gang di computer: 'vi arresto il sistema'. ", "Se sentite delle sirene avvicinarsi non vi preoccupate. Ho appena arrestato il PC! "]
 		ceninii = ["Hai avuto una conoscienza approfondita del capitolo. Spesso sei entrato anche nei particolari. Hai riscontrato un po' di difficoltà e incertezza in letteratura. Possiamo dire che è stata un interrogazione discreta. Ti do 7 +", "Questa verifica è andata abbastanza bene. Qualche erore di grammatica e di lessico. Tutto sommato hai fatto una buona verifica. Ti do 6 e mezzo, anzi no. Ti do 6 +"]
 		jc = choice(ceninii)
@@ -68,7 +68,7 @@ def john():
 					engine.runAndWait()
 				elif text == "Bene e tu" or text == "Sto bene e tu" or text == "Bene grazie e tu" or text == "Sto bene e te":
 					engine.say("Anche io!")
-			elif text == "Come stai" or text == "Come va" or text == "Ciao come stai" or text == "Ciao John come stai":
+			elif text == "Come stai" or text == "Come va" or text == "Ciao come stai" or text == "Ciao John come stai" or text == "come va":
 				engine.say("Sto benissimo!")
 				engine.runAndWait()
 			elif text == "Ciao Cenini" or text == "Ciao cenini" or text == "Cenini" or text == "cenini":
@@ -126,12 +126,11 @@ def john():
 			elif text == "Lancia una moneta":
 				flip = ["testa", "croce"]
 				ans3 = choice(flip)
-				engine.say("Sta flippando!")
+				engine.say(ans3)
 				engine.runAndWait()
 				print()
 				print()
 				print()
-				print(ans3)
 			elif text == "Quanti anni hai?" or text == "Quanti anni hai":
 				engine.say("L'età è un indicatore difficile da contare per un'intelligenza artificiale. Potrei contare le righe del mio codice ma una volta finito, sarò già cresciuto.")
 				engine.runAndWait()
