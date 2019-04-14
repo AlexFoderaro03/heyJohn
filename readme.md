@@ -6,7 +6,7 @@
 - To exit the program say "Quit" or "Exit"
 
 Implemented "Ok John"; "Hey John"" to start the conversation (he won't stop unless you press ctrl+c => fixing)
-
+Added Italian version
 #
 Interactions: 
 - "hey John";
