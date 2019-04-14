@@ -75,40 +75,45 @@ def john():
 				engine.say(jc)
 				engine.runAndWait()
 			elif text == "Apri YouTube" or text == "Aprimi YouTube" or text == "Puoi aprire YouTube" or text == "Puoi aprirmi youtube" or text == "Puoi aprirmi YouTube":
+				engine.say("Certo")
+				engine.runAndWait()
 				website = "https://www.youtube.com"
 				webbrowser.open_new_tab(website)
-				engine.say("Certo")
-				engine.runAndWait()
 			elif text == "Apri Google" or text == "Aprimi google" or text == "Puoi aprire Google" or text == "Puoi aprirmi google" or text == "Puoi aprirmi google":
-				website = "https://www.google.com"
-				webbrowser.open_new_tab(website)
 				engine.say("Certo", name)
 				engine.runAndWait()
+				website = "https://www.google.com"
+				webbrowser.open_new_tab(website)
 			elif text == "Apri gmail" or text == "Aprimi Gmail" or text == "Puoi aprire gmail" or text == "Puoi aprirmi Gmail" or text == "Puoi aprire Gmail":
+				engine.say("Certo")
+				engine.runAndWait()
 				website = "https://mail.google.com/mail/u/0/"
 				webbrowser.open_new_tab(website)
+			elif text == "Apri Instagram" or text == "Aprimi Instagram" or text == "Puoi aprire Instagram" or text == "Puoi aprirmi Instagram" or text == "Puoi aprirmi Instagram":
 				engine.say("Certo")
 				engine.runAndWait()
-			elif text == "Apri Instagram" or text == "Aprimi Instagram" or text == "Puoi aprire Instagram" or text == "Puoi aprirmi Instagram" or text == "Puoi aprirmi Instagram":
 				website = "https://www.instagram.com/"
 				webbrowser.open_new_tab(website)
+			elif text == "Apri WhatsApp" or text == "Aprimi WhatsApp" or text == "Puoi aprire WhatsApp" or text == "Puoi aprirmi WhatsApp" or text == "Puoi aprirmi WhatsApp":
 				engine.say("Certo")
 				engine.runAndWait()
-			elif text == "Apri WhatsApp" or text == "Aprimi WhatsApp" or text == "Puoi aprire WhatsApp" or text == "Puoi aprirmi WhatsApp" or text == "Puoi aprirmi WhatsApp":
 				website = "https://web.whatsapp.com/"
 				webbrowser.open_new_tab(website)
+			elif text == "Apri il dizionario di latino" or text == "Puoi aprirmi il dizionario di latino" or text == "Aprimi il dizionario di latino" or text == "Puoi aprirmi il dizionario di latino":
 				engine.say("Certo")
 				engine.runAndWait()
-			elif text == "Apri il dizionario di latino" or text == "Puoi aprirmi il dizionario di latino" or text == "Aprimi il dizionario di latino" or text == "Puoi aprirmi il dizionario di latino":
 				website = "https://www.dizionario-latino.com/"
 				webbrowser.open_new_tab(website)
+			elif text == "Apri GitHub" or text == "Puoi aprirmi GitHub" or text == "Aprimi github" or text == "Puoi aprirmi github":
 				engine.say("Certo")
 				engine.runAndWait()
-			elif text == "Apri GitHub" or text == "Puoi aprirmi GitHub" or text == "Aprimi github" or text == "Puoi aprirmi github":
 				website = "https://github.com/"
 				webbrowser.open_new_tab(website)
+			elif text == "Apri Google Drive" or text == "Apri drive" or text == "Puoi aprire Google Drive" or text == "aprti Google Drive":
 				engine.say("Certo")
 				engine.runAndWait()
+				website = "https://drive.google.com/drive/u/0/my-drive"
+				webbrowser.open_new_tab(website)
 			elif text == "Grazie" or text == "Grazie mille" or text == "grazie":
 				engine.say("Sono felice di accontentarti", name)
 				engine.runAndWait()
