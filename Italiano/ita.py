@@ -136,7 +136,10 @@ def john():
 				print()
 				print()
 			elif text == "esplodi" or text == "Esplodi" or text == "autodistruzione":
-				engine.say("bi bi bi bi bip. Bouuuummm. Sono esploduto")
+				engine.say("bi bi bi bi bip. Bouuuummm. Sono esploduto ")
+				engine.runAndWait()
+			elif text == "Ciao Teresa" or text == "ciao Teresa" or text == "ciao teresa":
+				engine.say("Ciao Daniele, la vuoi una caramella?. C'è Cialluca?")
 				engine.runAndWait()
 			elif text == "Quanti anni hai?" or text == "Quanti anni hai":
 				engine.say("L'età è un indicatore difficile da contare per un'intelligenza artificiale. Potrei contare le righe del mio codice ma una volta finito, sarò già cresciuto.")
