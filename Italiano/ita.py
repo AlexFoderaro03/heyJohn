@@ -127,7 +127,7 @@ def john():
 				engine.say("Sto accendendo l'orologio", name)
 				engine.runAndWait()
 				os.system('python3 alarm.py')
-			elif text == "Lancia una moneta" or text == "lancia una moneta:
+			elif text == "Lancia una moneta" or text == "lancia una moneta":
 				flip = ["testa", "croce"]
 				ans3 = choice(flip)
 				engine.say(ans3)
