@@ -71,7 +71,7 @@ def john():
 			elif text == "Come stai" or text == "Come va" or text == "Ciao come stai" or text == "Ciao John come stai" or text == "come va":
 				engine.say("Sto benissimo!")
 				engine.runAndWait()
-			elif text == "Ciao Cenini" or text == "Ciao cenini" or text == "Cenini" or text == "cenini":
+			elif text == "Ciao Cenini" or text == "Ciao cenini" or text == "Cenini" or text == "cenini" or text == "Ciao Daniele" or text == "ciao Daniele" :
 				engine.say(jc)
 				engine.runAndWait()
 			elif text == "Apri YouTube" or text == "Aprimi YouTube" or text == "Puoi aprire YouTube" or text == "Puoi aprirmi youtube" or text == "Puoi aprirmi YouTube":
