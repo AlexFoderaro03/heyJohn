@@ -33,8 +33,7 @@ def main():
 				engine.say("Dimmi ..." )
 				engine.runAndWait()
 				john()
-				quit()
-			elif text == "Esci" or text == "stop" or text == "Fermati" or text == "Stop":
+			elif text == "Esci" or text == "stop" or text == "Fermati" or text == "Stop" or text == "esci":
 				quit()
 			else:
 				main()
@@ -148,6 +147,8 @@ def john():
 			elif text == "Raccontami una barzelletta" or text == "Dimmi una barzelletta" or text == "barzelletta" or text == "Hey dimmi una barzelletta":
 				engine.say(jk)
 				engine.runAndWait()
+			elif text == "Esci" or text == "esci" or text == "Stop" or text == "Fermati" or text == "stop":
+				quit()
 			print()
 			print()
 			print()
