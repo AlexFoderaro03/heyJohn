@@ -1,9 +1,14 @@
 import speech_recognition as sr
 import webbrowser
 import os
-import pygame
+
+#pygame
+
+import pygame, sys
+from pygame.locals import *
 pygame.init()
 coin = pygame.mixer.Sound("coin.wav")
+
 from termcolor import colored
 import keyboard
 import subprocess
@@ -31,23 +36,7 @@ print()
 print()
 print()
 
-def main():
-	while True:
-		b = sr.Recognizer()
-		with sr.Microphone() as source:
-			audio = b.listen(source)
-		try:
-			text = b.recognize_google(audio, language="it-IT")
-			if text == "Ehi John" or text == "Ei John" or text == "Hei John" or text == "Hei john" or text == "Okay John" or text == "Ok John" or text == "OK John":
-				engine.say("Dimmi ..." )
-				engine.runAndWait()
-				john()
-			elif text == "Esci" or text == "stop" or text == "Fermati" or text == "Stop" or text == "esci":
-				quit()
-			else:
-				main()
-		except:
-			icantUndersatand = colored("Non ho capito", "red")
+
 
 def john():
 	while True:
@@ -195,4 +184,17 @@ def john():
 			icantUndersatand = colored("Scusa, non ho capito", "red")
 			print(icantUndersatand, name)
 
-main()
+
+screen = pygame.display.set_mode((400, 400))
+pygame.display.set_caption("Hey John")
+screen.fill((23, 99, 241))
+pygame.draw.rect(screen, (12, 235, 82), pygame.Rect(130, 165, 150, 50))
+
+
+while True:
+	for event in pygame.event.get():
+		if event.type == QUIT:
+			pygame.quit()
+			sys.quit()
+	pygame.display.update()
+
