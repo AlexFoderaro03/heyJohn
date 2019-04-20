@@ -145,7 +145,7 @@ def john():
 				engine.say("bi bi bi bi bip. Bouuuummm. Sono esploduto ")
 				engine.runAndWait()
 
-			elif text == "Riproduci della musica" or text == "riproduci della musica" or text == "Riproduci un po' di musica" or text == "riproduci un po' di musica" or text == "musica" or text == "Musica":
+			elif text == "Riproduci della musica" or text == "riproduci della musica" or text == "Riproduci un po' di musica" or text == "riproduci un po' di musica" or text == "musica" or text == "Musica" or text == "metti un po' di musica" or text == "Metti un po' di musica":
 				if songPref == "Spotify":
 					engine.say("Certo! Sto aprendo Spotify")
 					engine.runAndWait()
