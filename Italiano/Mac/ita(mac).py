@@ -114,7 +114,7 @@ def john():
 				engine.runAndWait()
 				website = "https://github.com/"
 				webbrowser.open_new_tab(website)
-			elif text == "Apri Google Drive" or text == "Apri drive" or text == "Puoi aprire Google Drive" or text == "aprti Google Drive":
+			elif text == "Apri Google Drive" or text == "Apri drive" or text == "Puoi aprire Google Drive" or text == "apri Google Drive":
 				engine.say("Certo")
 				engine.runAndWait()
 				website = "https://drive.google.com/drive/u/0/my-drive"
@@ -144,11 +144,19 @@ def john():
 			elif text == "esplodi" or text == "Esplodi" or text == "autodistruzione":
 				engine.say("bi bi bi bi bip. Bouuuummm. Sono esploduto ")
 				engine.runAndWait()
-			elif text == "Riproduci della musica" or text == "riproduci della musica" or text == "Riproduci un po' musica" or text == "riproduci un po' musica":
-				if IS_WINDOWS:
-					risposta = "Apro",
-				engine.say("bi bi bi bi bip. Bouuuummm. Sono esploduto ")
-				engine.runAndWait()
+
+			elif text == "Riproduci della musica" or text == "riproduci della musica" or text == "Riproduci un po' di musica" or text == "riproduci un po' di musica" or text == "musica" or text == "Musica":
+				if songPref == "Spotify":
+					engine.say("Certo! Sto aprendo Spotify")
+					engine.runAndWait()
+					os.system("open /Applications/Spotify.app")
+				else:
+					engine.say("Certo! Sto aprendo iTunes")
+					engine.runAndWait()
+					os.system("open /Applications/iTunes.app")
+
+
+
 			elif text == "Ciao Teresa" or text == "ciao Teresa" or text == "ciao teresa":
 				engine.say("Ciao Daniele, la vuoi una caramella?. C'è Cialluca?")
 				engine.runAndWait()
