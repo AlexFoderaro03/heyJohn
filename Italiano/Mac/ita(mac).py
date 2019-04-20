@@ -2,7 +2,8 @@ import speech_recognition as sr
 import webbrowser
 import os
 import pygame
-coin = pygame.mixer.Sound("./coin.wav")
+pygame.init()
+coin = pygame.mixer.Sound("coin.wav")
 from termcolor import colored
 import keyboard
 import subprocess
