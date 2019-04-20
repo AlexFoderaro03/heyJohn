@@ -10,6 +10,9 @@ import sys
 import requests
 from random import choice
 import pyttsx3
+
+IS_WINDOWS = sys.platform.lower() == "win32"
+
 engine = pyttsx3.init()
 engine.setProperty("rate", 160)
 engine.setProperty('voice', 'Luca')
@@ -18,6 +21,21 @@ def run(runfile):
     exec(rnf.read())
 file1 = open("yourname.txt", "r")
 name = file1.readline()
+file2 = open("music.txt", "r")
+songPref = file2.readline()
+
+if songPref == "Spotify":
+	if IS_WINDOWS:
+		musicApp = "Spotify.exe"
+	else:
+		musicApp = "Spotify.app"
+elif songPref == "iTunes":
+	if IS_WINDOWS:
+		musicApp = "iTunes.exe"
+	else:
+		musicApp = "iTunes.app"
+elif songPref == "":
+
 print()
 print()
 print()
