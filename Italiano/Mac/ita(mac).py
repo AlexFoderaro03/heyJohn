@@ -158,15 +158,15 @@ def john():
 					engine.runAndWait()
 					os.system("open /Applications/iTunes.app")
 
-				elif text == "Apri Spotify" or text == "apri Spotify":
-					engine.say("Certo! Sto aprendo Spotify")
-					engine.runAndWait()
-					os.system("open /Applications/Spotify.app")
+			elif text == "Apri Spotify" or text == "apri Spotify":
+				engine.say("Certo! Sto aprendo Spotify")
+				engine.runAndWait()
+				os.system("open /Applications/Spotify.app")
 
-				elif text == "Apri iTunes" or text == "apri iTunes":
-					engine.say("Certo! Sto aprendo iTunes")
-					engine.runAndWait()
-					os.system("open /Applications/iTunes.app")
+			elif text == "Apri iTunes" or text == "apri iTunes":
+				engine.say("Certo! Sto aprendo iTunes")
+				engine.runAndWait()
+				os.system("open /Applications/iTunes.app")
 
 
 
