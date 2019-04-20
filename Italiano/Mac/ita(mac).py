@@ -1,6 +1,8 @@
 import speech_recognition as sr
 import webbrowser
 import os
+import pygame
+coin = pygame.mixer.Sound("./coin.wav")
 from termcolor import colored
 import keyboard
 import subprocess
@@ -133,6 +135,7 @@ def john():
 				engine.runAndWait()
 				os.system('python3 alarm.py')
 			elif text == "Lancia una moneta" or text == "lancia una moneta":
+				coin.play()
 				flip = ["testa", "croce"]
 				ans3 = choice(flip)
 				engine.say(ans3)
