@@ -12,7 +12,7 @@ $ pip3 install -r requirements.txt
 
 Implementato "Ok John"; "Hey John"" per iniziare la conversazione (non parlerà finchè non sarà interpellato)
 
-Prima di far partire il programma dovresti scrivere il tuo nome nel file *"yourname.txt"*.
+Prima di far partire il programma dovresti scrivere il tuo nome nel file *"yourname.txt"* e scrivere il nome del software utilizzato per ascoltare musica (Spotify, iTunes) nel file *"music.txt"*.
 ###
 ###### *ancora in fase di sviluppo ...*
 #
