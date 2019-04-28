@@ -1,6 +1,7 @@
 import speech_recognition as sr
 import webbrowser
 import os
+<<<<<<< HEAD
 
 #pygame
 
@@ -9,6 +10,10 @@ from pygame.locals import *
 pygame.init()
 coin = pygame.mixer.Sound("coin.wav")
 
+=======
+import pygame
+coin = pygame.mixer.Sound("./coin.wav")
+>>>>>>> parent of 7d41511... ...
 from termcolor import colored
 import keyboard
 import subprocess
@@ -184,17 +189,4 @@ def john():
 			icantUndersatand = colored("Scusa, non ho capito", "red")
 			print(icantUndersatand, name)
 
-
-screen = pygame.display.set_mode((400, 400))
-pygame.display.set_caption("Hey John")
-screen.fill((23, 99, 241))
-pygame.draw.rect(screen, (12, 235, 82), pygame.Rect(130, 165, 150, 50))
-
-
-while True:
-	for event in pygame.event.get():
-		if event.type == QUIT:
-			pygame.quit()
-			sys.quit()
-	pygame.display.update()
 
