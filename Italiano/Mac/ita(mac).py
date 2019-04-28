@@ -1,8 +1,6 @@
 import speech_recognition as sr
 import webbrowser
 import os
-<<<<<<< HEAD
-
 #pygame
 
 import pygame, sys
@@ -10,10 +8,9 @@ from pygame.locals import *
 pygame.init()
 coin = pygame.mixer.Sound("coin.wav")
 
-=======
 import pygame
 coin = pygame.mixer.Sound("./coin.wav")
->>>>>>> parent of 7d41511... ...
+
 from termcolor import colored
 import keyboard
 import subprocess
@@ -189,4 +186,4 @@ def john():
 			icantUndersatand = colored("Scusa, non ho capito", "red")
 			print(icantUndersatand, name)
 
-
+john()
