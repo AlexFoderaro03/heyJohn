@@ -173,6 +173,24 @@ def john():
 				engine.runAndWait()
 			elif text == "Esci" or text == "esci" or text == "Stop" or text == "Fermati" or text == "stop":
 				quit()
+			else:
+				query = query
+				engine.say('Sto cercando...')
+				try:
+					try:
+						res = client.query(query)
+						results = next(res.results).text
+						engine.say('WOLFRAM-ALPHA dice - ')
+						engine.say(results)
+
+					except:
+						results = wikipedia.summary(query, sentences=2)
+						engine.say('Got it.')
+						engine.say('Cerco su WIKIPEDIA - ')
+						engine.say(results)
+
+				except:
+					webbrowser.open('www.google.com')
 			print()
 			print()
 			print()
